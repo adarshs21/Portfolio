@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" >
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" >
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0" >
+            </div>
+            <div class="form-group">
+                <label for="adhar">Aadhar Number:</label>
+                <input type="text" id="adhar" name="adhar" >
+            </div>
+            <div class="form-group">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" >
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" value="male" > Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other"> Other
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="blood-group">Blood Group:</label>
+                <select id="blood-group" name="blood-group" >
+                    <option value="">Select</option>
+                    <option value="a+">A+</option>
+                    <option value="a-">A-</option>
+                    <option value="b+">B+</option>
+                    <option value="b-">B-</option>
+                    <option value="ab+">AB+</option>
+                    <option value="ab-">AB-</option>
+                    <option value="o+">O+</option>
+                    <option value="o-">O-</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" ></textarea>
+            </div>
+            <div class="form-group">
+                <label>Any Previous Chronic Diseases:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="chronic-diseases" value="yes" > Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="chronic-diseases" value="no"> No
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <a href="/Users/sandeepekka/Desktop/sih/indexhome.html"><button type="submit">Registration</button></a>
+            </div>
+            <div class="sub_cont">
+                <a href="/Users/sandeepekka/Desktop/sih/indexopd.html"><button type="submit">Submit/Contiue</button></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

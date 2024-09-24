@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor page</title>
+    <link rel="stylesheet" href="stylesdoc.css">
+    <link rel="icon" type="image/png" href="user.png">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h2>Our Logo</h2>
+            </div>
+        </nav>
+        <div class="banner-wrapper">
+            <div class="title">
+                <h1>Medical Name</h1>
+            </div>
+            <div id="banner">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/701/690/original/abstract-polygonal-banner-background-vector.jpg" alt="Banner">
+            </div>
+        </div>
+        <div class="top">
+            <span>Date: XX:XX:20XX</span>
+            <br>
+            <span id="Doc"><h2>Doctor: Coder</h2></span>
+            <span>History:
+                <select id="doclist" name="History">
+                    <option>Doctors</option>
+                    <option value="">DOC-1 : date-1</option>
+                    <option value="">DOC-2 : date-2</option>
+                    <option value="">DOC-3 : date-3</option>
+                </select>
+            </span>
+        </div>   
+        <section class="patient-details">
+            <div class="patient-photo">
+                <div class="photo-placeholder">
+                    <img id="pic" src="user.png" alt="Profile Picture">
+                </div>
+            </div>
+            <div class="details">
+                <div class="details-left">
+                    <p>Name: ABC</p>
+                    <p>Address: ZXC</p>
+                    <p>Gender: NA</p>
+                    <p>Phone: 12345679X</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="details-right">
+                    <p>Age: XX</p>
+                    <p>Type: <input type="checkbox">Indoor <input type="checkbox">Outdoor</p>
+                    <p>Disease: Problem solving</p>
+                    <p>Blood Group: C+</p>
+                </div>
+            </div>
+        </section>
+        <section class="medication-diagnostics">
+            <div class="medication">
+                <h3>Medication</h3>
+                <div class="med-item">
+                    <input type="checkbox"> Meds 1 - <input type="number" min="10" max="50" step="10" value="10"> days
+                </div>
+                <div class="med-item">
+                    <input type="checkbox"> Meds 2 - <input type="number" min="10" max="50" step="10" value="10"> days
+                </div>
+                <div class="med-item">
+                    <input type="checkbox"> Meds 3 - <input type="number" min="10" max="50" step="10" value="10"> days
+                </div>
+                <div class="med-item">
+                    <input type="checkbox"> Meds 4 - <input type="number" min="10" max="50" step="10" value="10"> days
+                </div>
+                <div class="med-item">
+                    <input type="checkbox"> Meds 5 - <input type="number" min="10" max="50" step="10" value="10"> days
+                </div>
+            </div>
+            <div class="diagnostics">
+                <h3>Diagnosis / Operations</h3>
+                <div class="diag-item">
+                    <input type="checkbox"> X-ray:
+                    <select name="xray">
+                        <option value="">Position</option>
+                        <option value="">Head</option>
+                        <option value="">Thorax</option>
+                        <option value="">Abdomen</option>
+                        <option value="">Leg</option>
+                    </select>
+                </div>
+                <div class="diag-item">
+                    <input type="checkbox"> MRI:  
+                    <select name="mri">
+                        <option value="">Position</option>
+                        <option value="">Head</option>
+                        <option value="">Thorax</option>
+                        <option value="">Abdomen</option>
+                        <option value="">Leg</option>
+                    </select>
+                </div>
+                <div class="diag-item">
+                    <input type="checkbox"> CT Scan: 
+                    <select name="ct-scan">
+                        <option value="">Position</option>
+                        <option value="">Head</option>
+                        <option value="">Thorax</option>
+                        <option value="">Abdomen</option>
+                        <option value="">Leg</option>
+                    </select> 
+                </div>
+                <div class="diag-item">
+                    <input type="checkbox"> Ultra Sound: 
+                    <select name="ultra-sound">
+                        <option value="">Position</option>
+                        <option value="">Head</option>
+                        <option value="">Thorax</option>
+                        <option value="">Abdomen</option>
+                        <option value="">Leg</option>
+                    </select> 
+                </div>
+                <div class="diag-item">
+                    <input type="checkbox"> Surgery: 
+                    <select name="surgery">
+                        <option value="">Position</option>
+                        <option value="">Head</option>
+                        <option value="">Thorax</option>
+                        <option value="">Abdomen</option>
+                        <option value="">Leg</option>
+                    </select> 
+                </div>
+            </div>
+        </section>
+
+        <div class="misc-info">
+            <div class="info-items">
+                <p><input type="checkbox"> Insurance Cover</p>
+                <p><input type="checkbox"> Bed Admissible</p>
+            </div>
+            <div class="rx-info">
+                <h3>Rx:</h3>
+                <textarea id="rxbox" rows="4"></textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

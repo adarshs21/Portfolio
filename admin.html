@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hospital Admin Dashboard</h1>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <h2>Input Hospital Information</h2>
+                
+                <form id="hospital-form">
+                    <label for="address">Hospital Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter address" required>
+                    
+                    <label for="beds">Total Beds:</label>
+                    <input type="number" id="beds" name="beds" placeholder="Enter number of beds" required>
+                    
+                    <label for="oxygen-tanks">Oxygen Tanks Available:</label>
+                    <input type="number" id="oxygen-tanks" name="oxygen-tanks" placeholder="Enter number of oxygen tanks" required>
+
+                    <h3>Doctors Information</h3>
+                    <div id="doctors-input">
+                        <label for="dept-select">Department:</label>
+                        <select id="dept-select" required>
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                        </select>
+                        <input type="number" id="doc-count" placeholder="Number of Doctors" required>
+                        <button type="button" onclick="addDoctor()">Add Doctor</button>
+                    </div>
+
+                    <h3>Medicine Information</h3>
+                    <div id="medicines-input">
+                        <label for="med-select">Medicine:</label>
+                        <select id="med-select" required>
+                            <option value="" disabled selected>Select Medicine</option>
+                            <option value="Aspirin">Aspirin</option>
+                            <option value="Ibuprofen">Ibuprofen</option>
+                            <option value="Antibiotics">Antibiotics</option>
+                            <option value="Paracetamol">Paracetamol</option>
+                        </select>
+                        <input type="number" id="med-quantity" placeholder="Quantity" required>
+                        <button type="button" onclick="addMedicine()">Add Medicine</button>
+                    </div>
+                    
+                    <button type="submit">Update Information</button>
+                </form>
+            </section>
+
+            <section class="info-section">
+                <h2>Hospital Details</h2>
+                <div class="info">
+                    <label for="display-address">Address:</label>
+                    <p id="display-address">N/A</p>
+                </div>
+                <div class="info">
+                    <label for="display-beds">Total Beds:</label>
+                    <p id="display-beds">N/A</p>
+                </div>
+                <div class="info">
+                    <label for="display-oxygen-tanks">Oxygen Tanks Available:</label>
+                    <p id="display-oxygen-tanks">N/A</p>
+                </div>
+            </section>
+
+            <section class="department-section">
+                <h2>Doctors by Department</h2>
+                <table id="doctors-table">
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Number of Doctors</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="medicine-section">
+                <h2>Medicine Inventory</h2>
+                <table id="medicines-table">
+                    <thead>
+                        <tr>
+                            <th>Medicine</th>
+                            <th>Quantity Available</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

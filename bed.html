@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Bed Booking</title>
+    <link rel="stylesheet" href="bed.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Careसेतु</a></li>
+                <li><a href="indexopd.html" class="btn-primary">Book OPD</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="top-section">
+        <div id="hospitalInfo">
+            <h2 id="hospitalName">SUM Ultimate</h2>
+            <div id="selectedHospitalText">No hospital selected yet</div>
+            <div id="hospitalMap" class="small-map">
+            </div>
+        </div>
+        <div class="bed-overview">
+            <h2>Bed Occupancy Overview</h2>
+            <div class="department">
+                <h3>General Medicine</h3>
+                <div class="bed-info">
+                    <div class="bed-box available-box" id="generalAvailable">10/20</div>
+                </div>
+                <p>Charges: Rs.500 per day</p>
+            </div>
+            <div class="department">
+                <h3>Surgery</h3>
+                <div class="bed-info">
+                    <div class="bed-box available-box" id="surgeryAvailable">5/15</div>
+                </div>
+                <p>Charges: RS.1000 per day</p>
+            </div>
+        </div>
+        <div class="booking-form">
+            <h2>Book a Bed</h2>
+            <label for="bedType">Choose Bed Type:</label>
+            <select id="bedType" name="bedType">
+                <option value="general">General Medicine</option>
+                <option value="surgery">Surgery</option>
+            </select>
+
+            <form id="bookingForm">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="uid">UID:</label>
+                <input type="text" id="uid" name="uid" required>
+                <button type="submit" class="btn-primary">Book Bed</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="bed.js"></script>
+</body>
+</html>

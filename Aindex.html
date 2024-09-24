@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambulance Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGLpuDsXyK3prGYgAeFCal8x0Dalo7FZ0&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+    <div class="floating-inputs">
+        <div class="input-container">
+            <input type="text" id="fromLocation" placeholder="Enter Current Hospital or Location">
+            <span class="clear-icon" onclick="clearInput('fromLocation')">&#10006;</span>
+        </div>
+        <div class="input-container">
+            <input type="text" id="toLocation" placeholder="Enter Destination Hospital">
+            <span class="clear-icon" onclick="clearInput('toLocation')">&#10006;</span>
+        </div>
+        <select id="ambulanceType">
+            <option value="BLS">BLS Ambulance</option>
+            <option value="ALS">ALS Ambulance</option>
+        </select>
+        <button id="findAmbulance" onclick="findAmbulances()">Find Ambulances</button>
+    </div>
+    <div class="container">
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        <div class="drivers-container" id="ambulanceDetails">
+        </div>
+    </div>
+    
+</body>
+</html>
