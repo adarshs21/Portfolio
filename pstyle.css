@@ -140,7 +140,11 @@ span {
 .home-img {
     border-radius: 50%;
 }
-
+.experience-content a{
+    text-decoration:underline;
+    font-size:13px;
+    color: rgba(255, 255, 255, 0.445);
+}
 .home-img img {
     position: relative;
     width: 24vw;
